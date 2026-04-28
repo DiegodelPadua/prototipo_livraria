@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Livraria Qualidade - Protótipo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topo">
+    <div>
+      <p class="etiqueta">Protótipo</p>
+      <h1>Livraria Qualidade</h1>
+      <p>Busca de livros com foco em requisitos funcionais e não funcionais.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="painel busca">
+      <h2>Pesquisar livros</h2>
+      <p>Digite título, autor ou ISBN.</p>
+      <div class="linha-busca">
+        <input id="campoBusca" type="text" placeholder="Ex.: Java, Clean Code, 978..." />
+        <button id="btnLimpar">Limpar</button>
+      </div>
+      <p id="resumoResultado" class="resumo"></p>
+    </section>
+
+    <section id="listaLivros" class="grid-livros"></section>
+
+    <section class="qualidade">
+      <article>
+        <strong>Eficiência</strong>
+        <span>Meta: 1000 acessos simultâneos em promoções.</span>
+      </article>
+      <article>
+        <strong>Usabilidade</strong>
+        <span>Interface simples para funcionários novos.</span>
+      </article>
+      <article>
+        <strong>Segurança</strong>
+        <span>Proteção de dados, pagamento e endereço.</span>
+      </article>
+      <article>
+        <strong>Confiabilidade</strong>
+        <span>Recuperação rápida em caso de falha.</span>
+      </article>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
